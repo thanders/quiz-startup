@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package broker;
+
+option go_package = "github.com/thanders/quiz-startup/broker/proto";
+
+message BrokerRequest {
+  string number_of_questions = 1;
+  string number_of_players = 2;
+}
+
+message BrokerResponse {
+  string game_id = 1;
+}
+
+service BrokerService {
+  rpc CreateGame(BrokerRequest) returns(BrokerResponse) {};
+}

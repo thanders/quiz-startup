@@ -1,0 +1,4 @@
+Service Name, Binary path, Description,
+brokerService, /broker/server/bin/server, Accepts requests from client
+brokerClient, /broker/client/bin/client, Requests data from the brokerServer
+questionsService, /questions/service/bin/questions, Accepts requests for questions
